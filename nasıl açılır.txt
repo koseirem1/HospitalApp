@@ -1,0 +1,5 @@
+projeyi açýnca þifre yerine Trusted_connection=true;
+database çalýþtýrmak iiçin entity sil ve projeyi klasörde göstere týklayýp bin klasöründen entity sil
+tekrar entity yükle
+database sil
+kapatýp aç çalýþtýr

@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AFBD2061-86AF-4614-A74C-EC331AD13408}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HospitalApp</RootNamespace>
+    <AssemblyName>HospitalApp</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationDbContext.cs" />
+    <Compile Include="Appointment.cs" />
+    <Compile Include="Department.cs" />
+    <Compile Include="Doctor.cs" />
+    <Compile Include="FrmAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAppointment.Designer.cs">
+      <DependentUpon>FrmAppointment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDepartmentAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartmentAdd.Designer.cs">
+      <DependentUpon>FrmDepartmentAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDepartmentEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartmentEdit.Designer.cs">
+      <DependentUpon>FrmDepartmentEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDepartments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDepartments.Designer.cs">
+      <DependentUpon>FrmDepartments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoctorAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorAdd.Designer.cs">
+      <DependentUpon>FrmDoctorAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoctorEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctorEdit.Designer.cs">
+      <DependentUpon>FrmDoctorEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoctors.Designer.cs">
+      <DependentUpon>FrmDoctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHospitalEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHospitalEdit.Designer.cs">
+      <DependentUpon>FrmHospitalEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHospitalAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHospitalAdd.Designer.cs">
+      <DependentUpon>FrmHospitalAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmHospitals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmHospitals.Designer.cs">
+      <DependentUpon>FrmHospitals.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMyAppointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMyAppointments.Designer.cs">
+      <DependentUpon>FrmMyAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPassword.Designer.cs">
+      <DependentUpon>FrmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPatients.Designer.cs">
+      <DependentUpon>FrmPatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSifre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSifre.Designer.cs">
+      <DependentUpon>FrmSifre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gender.cs" />
+    <Compile Include="Hospital.cs" />
+    <Compile Include="Migrations\201905310730312_InitialCreate.cs" />
+    <Compile Include="Migrations\201905310730312_InitialCreate.Designer.cs">
+      <DependentUpon>201905310730312_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201905311149086_BaziDegisiklikler5.cs" />
+    <Compile Include="Migrations\201905311149086_BaziDegisiklikler5.Designer.cs">
+      <DependentUpon>201905311149086_BaziDegisiklikler5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906101009561_DbChange.cs" />
+    <Compile Include="Migrations\201906101009561_DbChange.Designer.cs">
+      <DependentUpon>201906101009561_DbChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201906131028489_HospitalDoctor.cs" />
+    <Compile Include="Migrations\201906131028489_HospitalDoctor.Designer.cs">
+      <DependentUpon>201906131028489_HospitalDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Patient.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAppointment.resx">
+      <DependentUpon>FrmAppointment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDepartmentAdd.resx">
+      <DependentUpon>FrmDepartmentAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDepartmentEdit.resx">
+      <DependentUpon>FrmDepartmentEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDepartments.resx">
+      <DependentUpon>FrmDepartments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctorAdd.resx">
+      <DependentUpon>FrmDoctorAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctorEdit.resx">
+      <DependentUpon>FrmDoctorEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoctors.resx">
+      <DependentUpon>FrmDoctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHospitalEdit.resx">
+      <DependentUpon>FrmHospitalEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHospitalAdd.resx">
+      <DependentUpon>FrmHospitalAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmHospitals.resx">
+      <DependentUpon>FrmHospitals.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMyAppointments.resx">
+      <DependentUpon>FrmMyAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPassword.resx">
+      <DependentUpon>FrmPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPatients.resx">
+      <DependentUpon>FrmPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSifre.resx">
+      <DependentUpon>FrmSifre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905310730312_InitialCreate.resx">
+      <DependentUpon>201905310730312_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201905311149086_BaziDegisiklikler5.resx">
+      <DependentUpon>201905311149086_BaziDegisiklikler5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906101009561_DbChange.resx">
+      <DependentUpon>201906101009561_DbChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201906131028489_HospitalDoctor.resx">
+      <DependentUpon>201906131028489_HospitalDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EntityFramework">
+      <Version>6.2.0</Version>
+    </PackageReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
